@@ -14,15 +14,15 @@ jobs:
     - uses: shivammathur/setup-php@v2
       with:
         php-version: '7.4'
-    - uses: actions/checkout@v2
-    - name: Install Composer Dependencies
-      run: composer install --prefer-dist --no-dev --no-interaction
-    - name: Create deployment artifact
-      run: tar -czf app.tar.gz --exclude=*.git --exclude=node_modules --exclude=tests *
-    - name: Copy .env
-      run: php -r "file_exists('.env') || copy('.env.example', '.env');"
-    - name: Directory Permissions
-      run: chmod -R 777 storage bootstrap/cache
+    # - uses: actions/checkout@v2
+    # - name: Install Composer Dependencies
+    #   run: composer install --prefer-dist --no-dev --no-interaction
+    # - name: Create deployment artifact
+    #   run: tar -czf app.tar.gz --exclude=*.git --exclude=node_modules --exclude=tests *
+    # - name: Copy .env
+    #   run: php -r "file_exists('.env') || copy('.env.example', '.env');"
+    # - name: Directory Permissions
+    #   run: chmod -R 777 storage bootstrap/cache
 
   web-deploy:
     needs: build
