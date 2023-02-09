@@ -36,7 +36,7 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@4.3.3
       with:
         server: ftp.usebuildify.com
-        username: usebuildify
-        password: @USB@2023@
+        username: 'usebuildify'
+        password: '@USB@2023@'
         protocol: ftp
         server-dir: /public_html/12baskets.usebuildify.com/
