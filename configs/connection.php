@@ -20,16 +20,27 @@
 # -------------------------------------------------#
 
 $connect = [
+	// # Database Host Name
+	// 'HOSTNAME' => 'localhost',
+	// # Database Username
+	// 'USERNAME' => 'root',
+
+	// # Database Password
+	// 'PASSWORD' => '',
+
+	// # Database Name
+	// 'DATABASE' => 'designpark_multirest'
+	
 	# Database Host Name
 	'HOSTNAME' => 'localhost',
 	# Database Username
-	'USERNAME' => 'root',
+	'USERNAME' => 'gradbook_12baskets',
 
 	# Database Password
-	'PASSWORD' => '',
+	'PASSWORD' => 'xmeCKE49',
 
 	# Database Name
-	'DATABASE' => 'designpark_multirest'
+	'DATABASE' => 'gradbook_12baskets'
 ];
 
 # Tables' Prefix
